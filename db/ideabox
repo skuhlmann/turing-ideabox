@@ -1,0 +1,10 @@
+---
+ideas:
+- title: Idea 1
+  description: "copy 2\r\n"
+  rank: 2
+- title: New Idea
+  description: copy
+- title: Idea 3
+  description: It's good
+  rank: 1

@@ -1,9 +1,30 @@
 ---
 ideas:
 - title: New Idea
-  description: copy
-  rank: 8
+  description: copyLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+    dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
+    eget id nisi. Praesent suscipit semper risus, nec bibendum tortor semper non.
+    Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
+    sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
+    quis sapien nisl.
 - title: Idea 4
-  description: It's good
+  description: It's goodLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+    dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
+    eget id nisi. Praesent suscipit semper risus, nec bibendum tortor semper non.
+    Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
+    sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
+    quis sapien nisl
 - title: New idea 2
-  description: news
+  description: newsLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+    dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
+    eget id nisi. Praesent suscipit semper risus, nec bibendum tortor semper non.
+    Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
+    sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
+    quis sapien nisl
+- title: Idea 6
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+    facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt eget
+    id nisi. Praesent suscipit semper risus, nec bibendum tortor semper non. Fusce
+    pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis sit
+    amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
+    quis sapien nisl

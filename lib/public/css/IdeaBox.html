@@ -1,0 +1,75 @@
+
+<!-- saved from url=(0022)http://localhost:9292/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+    <title>IdeaBox</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="./IdeaBox_files/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header"> 
+				<ul class="nav nav-pills pull-right">
+          <li class="active"><a href="http://localhost:9292/#">Home</a></li>
+          <li><a href="http://localhost:9292/#">All Ideas</a></li>
+        </ul>
+        <h3 class="text-muted">IdeaBox</h3>
+      <br>
+      </div>
+      <div class="jumbotron">
+		   <form action="./IdeaBox_files/IdeaBox.html" method="POST">
+	<p>
+		An Idea:
+	</p>
+	<input type="text" name="idea[title]"><br>
+	<textarea name="idea[description]"></textarea><br>
+	<input type="submit">	
+</form>
+<h3>Existing Ideas</h3>
+<ul>
+	
+		<li>
+			<form action="http://localhost:9292/0/like" method="POST" style="display: inline">
+			  <input type="submit" value="+">
+			</form>
+			New Idea (0)<br>
+			copy<br>
+			<a href="http://localhost:9292/0/edit">Edit</a>
+			<form action="http://localhost:9292/0" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete">
+      </form>
+		</li>
+	
+		<li>
+			<form action="http://localhost:9292/1/like" method="POST" style="display: inline">
+			  <input type="submit" value="+">
+			</form>
+			Idea 4 (1)<br>
+			It's good<br>
+			<a href="http://localhost:9292/1/edit">Edit</a>
+			<form action="http://localhost:9292/1" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete">
+      </form>
+		</li>
+	
+		<li>
+			<form action="http://localhost:9292/2/like" method="POST" style="display: inline">
+			  <input type="submit" value="+">
+			</form>
+			New idea 2 (2)<br>
+			news<br>
+			<a href="http://localhost:9292/2/edit">Edit</a>
+			<form action="http://localhost:9292/2" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete">
+      </form>
+		</li>
+	
+</ul>
+  	  </div>
+    </div>
+	
+</body></html>

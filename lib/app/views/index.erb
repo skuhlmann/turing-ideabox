@@ -9,23 +9,16 @@
 	</div>
 	<div class="col-lg-6">
 		<h2>Search For Ideas</h2>
-			<form action='/results' method='POST'>
+			<form action='/results' method='GET'>
+				<input type='text' class="form-control" name="phrase" placeholder="Search for an idea by title"/><br/>
+				<input type='submit' value="Search" class="btn btn-default"/>
+			</form>
+	</div>
 	<div class="col-lg-6">
-		<h2>Existing Ideas</h2>
+		<h2>Your Latest Dumb Idea</h2>
 			<ul class="list-inline">
 				<li>
-				<% ideas.each do |idea| %>
-					<h3>Ranked <%= idea.id.next %>: <%= idea.title %></h3>
-					<h6><%= idea.description %></h6>
-					<h6><a href="/<%= idea.id %>/edit">Edit</a></h6>
-						<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">
-		 					<input type='submit' value="Good Idea" class="btn btn-default"/>
-						</form></p>
-						<form action="/<%= idea.id %>" method="POST">
-      				<input type="hidden" name="_method" value="DELETE">
-      				<input type="submit" value="Delete Idea" class="btn btn-default"/>
-	    			</form>	
-				<% end %>
 			</li>
 		</ul>
 	</div>
+</div>

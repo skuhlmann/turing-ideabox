@@ -21,6 +21,15 @@ class IdeaBoxApp < Sinatra::Base
 	  redirect '/'
 	end
 
+	get '/all_ideas' do 
+		erb :all_ideas, locals: {ideas: IdeaStore.all.sort, idea: Idea.new(params)}
+	end
+
+	get '/results' do 
+		search_results = IdeaStore.search(params[:phrase])
+		erb :results, locals: {search_results: search_results}
+	end
+
 	delete '/:id' do |id|
 	  IdeaStore.delete(id.to_i)
 	  redirect '/'

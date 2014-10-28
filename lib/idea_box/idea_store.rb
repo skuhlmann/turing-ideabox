@@ -55,4 +55,13 @@ class IdeaStore
   	end
   end
 
+  def self.search(phrase)
+    #1. get array of all ideas
+    #2. find all objects/ideas in the array with idea.attribute == the phrase
+    all.find_all {|idea| idea.title == phrase}.flatten
+
+    # results = []
+    # raw_ideas.map {|data| results << Idea.new(data)}
+    # results.find_all {|idea| idea.title.include?(phrase)} 
+  end
 end

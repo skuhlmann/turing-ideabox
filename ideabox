@@ -1,8 +1,4 @@
 ---
 ideas:
-- :title: This is an idea.
-  :description: Any good? No!
-- :title: Another Idea
-  :description: Here it is.
-- :title: And one more
-  :description: "For good measure\r\n"
+- title: Idea 2
+  description: Testing

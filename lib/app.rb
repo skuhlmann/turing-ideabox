@@ -15,7 +15,8 @@ class IdeaBoxApp < Sinatra::Base
 	get '/' do 
 		erb :index, locals: {ideas: IdeaStore.all.sort, 
 			                   random_idea: IdeaStore.all.sample,
-			                   tags: IdeaStore.tags
+			                   tags: IdeaStore.tags,
+			                   categories: IdeaStore.categories
 			                  }
 	end
 
@@ -50,7 +51,7 @@ class IdeaBoxApp < Sinatra::Base
 
 	put '/:id' do |id|
 		IdeaStore.update(id.to_i, params[:idea])
-		redirect '/id/detail'
+		redirect '/'+id+'/detail'
 	end
 
 	post '/:id/like' do |id|

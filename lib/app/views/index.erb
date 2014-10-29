@@ -7,15 +7,37 @@
 				<input type='submit' value="Search" class="btn btn-default"/>
 			</form>
 	</div>
+	<hr>
 	<div class="col-lg-6">
-		<hr>
+		<h2>Find Ideas By Category</h2>
+			<% categories.each do |category| %>
+				<h4><a href="/<%= category %>/category"><%= category %></a></h4>
+			<% end %>
+				</li>
+			</ul>			
+	</div>
+	<hr>
+	<div class="col-lg-6">
   	<h2>Create A New Idea</h2>
 			<form action='/' method='POST'>
 				<input type='text' class="form-control" name='idea[title]' placeholder="Enter Title"/><br/>
 				<textarea name='idea[description]'class="form-control" placeholder="Enter Description" ></textarea></br>
+				<select name='idea[category]' class="form-control">
+				  <option value="default" disabled selected>Select a category</option>
+				  <option value="work">Work</option>
+				  <option value="personal">Personal</option>
+				  <option value="dinner">Dinner</option>
+				</select></br>
 				<input type='text' class="form-control" name='idea[tags]' placeholder="Enter Tags (separate with a comma)"/><br/>
 				<input type='submit' class="btn btn-default"/>	
 			</form>
+	</div>
+	<hr>
+	<div class="col-lg-6">
+		<h2>Idea Tags</h2>
+			<% tags.each do |tag| %>
+					<a href="/<%= tag %>/tag"><%= tag %></a> |
+			<% end %>
 	</div>
 	<hr>
 	<div class="col-lg-6">
@@ -28,12 +50,5 @@
 						<p><form action='/<%= random_idea.id %>/like' method='POST' style="display: inline">
 		 					<input type='submit' value="Good Idea +1" class="btn btn-default"/>
 						</form></p>
-	</div>
-	<hr>
-		<div class="col-lg-6">
-		<h2>Idea Tags</h2>
-			<% tags.each do |tag| %>
-					<a href="/<%= tag %>/tag"><%= tag %></a> |
-			<% end %>
 	</div>
 </div>

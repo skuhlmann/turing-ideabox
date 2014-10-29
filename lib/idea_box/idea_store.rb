@@ -68,4 +68,9 @@ class IdeaStore
   def self.tag_ideas(tag_name)
     all.select {|idea| idea.tags.include?(tag_name)}
   end
+
+  def self.categories
+    all.map(&:category).uniq
+  end
+
 end

@@ -8,7 +8,7 @@
 				<% ideas.each do |idea| %>
 					<h3>Ranked <%= idea.id.next %>: <%= idea.title %></h3>
 					<h6><%= idea.description %></h6>
-					<h6>TAGS: <%= idea.tags.join(", ") %></h6>
+					<h6>CATEGORY: <%= idea.category %> | TAGS: <%= idea.tags.join(", ") %></h6>
 					<h5><a href="/<%= idea.id %>/detail">View Idea Detail</a></h5>
 					<h5><a href="/<%= idea.id %>/edit">Edit Idea</a></h5>
 						<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">

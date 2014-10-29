@@ -1,14 +1,13 @@
-<h1>All Ideas</h1>
+<h1>Tagged Ideas</h1>
 <div class="row">	
 	<div class="col-lg-6">
-		<h2>Everything You Ever Thought</h2>
-		<p> Ranked by how good they are</p>
+		<h2><%= tag_name.upcase %> Ideas</h2>
+		<p> Ranked by how good they are:</p>
 			<ul class="list-inline">
 				<li>
 				<% ideas.each do |idea| %>
 					<h3>Ranked <%= idea.id.next %>: <%= idea.title %></h3>
 					<h6><%= idea.description %></h6>
-					<h6>TAGS: <%= idea.tags.join(", ") %></h6>
 					<h5><a href="/<%= idea.id %>/detail">View Idea Detail</a></h5>
 					<h5><a href="/<%= idea.id %>/edit">Edit Idea</a></h5>
 						<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">

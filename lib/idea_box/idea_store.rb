@@ -60,4 +60,12 @@ class IdeaStore
       idea.title.downcase.include?(phrase) || idea.description.downcase.include?(phrase)
     end
   end
+
+  def self.tags
+    all.flat_map(&:tags).uniq
+  end
+
+  def self.tag_ideas(tag_name)
+    all.select {|idea| idea.tags.include?(tag_name)}
+  end
 end

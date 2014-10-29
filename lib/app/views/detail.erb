@@ -3,9 +3,10 @@
 	<h2>Idea Detail</h2>
 		<h3><%= idea.title %></h3>
 		<h6><%= idea.description %></h6>
+		<h6>TAGS: <%= idea.tags.join(", ") %></h6>
 				<h5><a href="/<%= idea.id %>/edit">Edit Idea</a></h5>
 				<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">
- 					<input type='submit' value="Good Idea" class="btn btn-default"/>
+ 					<input type='submit' value="Good Idea +1" class="btn btn-default"/>
 				</form></p>
 				<form action="/<%= idea.id %>" method="POST">
     				<input type="hidden" name="_method" value="DELETE">

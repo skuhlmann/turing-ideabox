@@ -1,3 +1,4 @@
+<h1>A Bunch of Ideas</h1>
 <div class="row">
 	<div class="col-lg-6">
 		<h2>Search For Ideas</h2>
@@ -12,6 +13,7 @@
 			<form action='/' method='POST'>
 				<input type='text' class="form-control" name='idea[title]' placeholder="Enter Title"/><br/>
 				<textarea name='idea[description]'class="form-control" placeholder="Enter Description" ></textarea></br>
+				<input type='text' class="form-control" name='idea[tags]' placeholder="Enter Tags (separate with a comma)"/><br/>
 				<input type='submit' class="btn btn-default"/>	
 			</form>
 	</div>
@@ -20,10 +22,18 @@
 		<h2>A Random Idea From Your Box</h2>
 			<h3><%= random_idea.title %></h3>
 			<h6><%= random_idea.description %></h6>
+			<h6>TAGS: <%= random_idea.tags.join(", ") %></h6>
 					<h5><a href="/<%= random_idea.id %>/detail">View Idea Detail</a></h5>
 					<h5><a href="/<%= random_idea.id %>/edit">Edit Idea</a></h5>
 						<p><form action='/<%= random_idea.id %>/like' method='POST' style="display: inline">
-		 					<input type='submit' value="Good Idea" class="btn btn-default"/>
+		 					<input type='submit' value="Good Idea +1" class="btn btn-default"/>
 						</form></p>
+	</div>
+	<hr>
+		<div class="col-lg-6">
+		<h2>Idea Tags</h2>
+			<% tags.each do |tag| %>
+					<a href="/<%= tag %>/tag"><%= tag %></a> |
+			<% end %>
 	</div>
 </div>

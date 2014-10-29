@@ -7,6 +7,7 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl.
+  tags: blue, green, pink
 - title: Idea 4
   description: It's goodLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
     dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
@@ -14,6 +15,7 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  tags: green orange
 - title: New idea 2
   description: newsLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
     dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
@@ -21,6 +23,7 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  tags: green orange
 - title: Idea 6
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
     facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt eget
@@ -28,7 +31,16 @@ ideas:
     pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis sit
     amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  tags: purple, pink, blue
 - title: Idea
   description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
     lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
     ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  Sam
+  tags: this is a tag
+- title: Idea with tags
+  description: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas
+    nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+  tags: yellow, blue
+- title: Herbert 2
+  description: test test
+  tags: ''

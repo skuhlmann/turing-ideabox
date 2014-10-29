@@ -65,4 +65,8 @@ class IdeaBoxApp < Sinatra::Base
 		erb :tag, locals: {tag_name: tag_name, ideas: IdeaStore.tag_ideas(tag_name)}
 	end
 
+	get '/:category_name/category' do |category_name|
+		erb :category, locals: {category_name: category_name, ideas: IdeaStore.category_ideas(category_name)}
+	end
+
 end

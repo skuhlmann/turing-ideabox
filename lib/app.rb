@@ -13,7 +13,10 @@ class IdeaBoxApp < Sinatra::Base
 	end
 
 	get '/' do 
-		erb :index, locals: {ideas: IdeaStore.all.sort, idea: Idea.new(params)}
+		erb :index, locals: {ideas: IdeaStore.all.sort, 
+			                   idea: Idea.new(params),
+			                   random_idea: IdeaStore.all.sample
+			                  }
 	end
 
 	post '/' do
@@ -26,7 +29,7 @@ class IdeaBoxApp < Sinatra::Base
 	end
 
 	get '/results' do 
-		search_results = IdeaStore.search(params[:phrase])
+		search_results = IdeaStore.search(params[:phrase].downcase)
 		erb :results, locals: {search_results: search_results}
 	end
 

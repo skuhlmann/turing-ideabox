@@ -33,6 +33,11 @@ class IdeaBoxApp < Sinatra::Base
 		erb :results, locals: {search_results: search_results}
 	end
 
+	get '/:id/detail' do |id|
+		idea = IdeaStore.find(id.to_i)
+		erb :detail, locals: {idea: idea}
+	end
+
 	delete '/:id' do |id|
 	  IdeaStore.delete(id.to_i)
 	  redirect '/'

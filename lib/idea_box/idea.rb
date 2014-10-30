@@ -1,5 +1,3 @@
-require 'yaml/store'
-
 class Idea
 	include Comparable
 

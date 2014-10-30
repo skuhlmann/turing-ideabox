@@ -17,6 +17,7 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  rank: 2
   tags: green orange
   category: Work
 - title: New idea 2
@@ -26,8 +27,9 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  rank: 0
+  tags: green
   category: Dinner
-  tags: green orange
 - title: Idea 6
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
     facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt eget
@@ -68,5 +70,6 @@ ideas:
   tags: pink
 - title: Horses in Space
   description: The future of space transportation.
-  category: Personal
+  rank: -1
   tags: space, horses
+  category: Personal

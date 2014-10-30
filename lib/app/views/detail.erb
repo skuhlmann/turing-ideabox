@@ -8,6 +8,9 @@
 			<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">
 				<input type='submit' value="Good Idea +1" class="btn btn-default"/>
 			</form></p>
+			<p><form action='/<%= idea.id %>/unlike' method='POST' style="display: inline">
+				<input type='submit' value="Bad Idea -1" class="btn btn-default"/>
+			</form></p>
 		<form action="/<%= idea.id %>" method="POST">
 			<input type="hidden" name="_method" value="DELETE">
 			<input type="submit" value="Delete Idea" class="btn btn-default"/>

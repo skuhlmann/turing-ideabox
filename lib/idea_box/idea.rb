@@ -30,6 +30,10 @@ class Idea
 		@rank = rank.next
 	end
 
+	def unlike!
+		@rank = rank.pred
+	end
+
 	def <=>(other)
 		other.rank <=> rank
 	end

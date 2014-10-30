@@ -58,7 +58,14 @@ class IdeaBoxApp < Sinatra::Base
 	  idea = IdeaStore.find(id.to_i)
 	  idea.like!
 	  IdeaStore.update(id.to_i, idea.to_h)
-	  redirect "/:id"
+	  redirect '/'+id+'/detail'
+	end	
+
+	post '/:id/unlike' do |id|
+	  idea = IdeaStore.find(id.to_i)
+	  idea.unlike!
+	  IdeaStore.update(id.to_i, idea.to_h)
+	  redirect '/'+id+'/detail'
 	end	
 
 	get '/:tag_name/tag' do |tag_name|

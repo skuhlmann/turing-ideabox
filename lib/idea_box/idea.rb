@@ -35,5 +35,4 @@ class Idea
 	def <=>(other)
 		other.rank <=> rank
 	end
-
 end

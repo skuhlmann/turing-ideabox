@@ -76,6 +76,4 @@ class IdeaStore
   def self.category_ideas(category_name)
     all.select {|idea| idea.category.include?(category_name)}
   end
-
-
 end

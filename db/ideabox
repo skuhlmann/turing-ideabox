@@ -7,8 +7,9 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl.
+  rank: 0
+  tags: yellow
   category: Work
-  tags: blue, green, pink, green
 - title: Idea 4
   description: It's goodLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
     dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
@@ -34,8 +35,9 @@ ideas:
     pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis sit
     amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
+  rank: 0
+  tags: purple
   category: Work
-  tags: purple, pink, blue, some
 - title: Idea
   description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
     lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
@@ -51,3 +53,16 @@ ideas:
   description: test test
   category: Personal
   tags: joseph
+- title: Good
+  description: 'Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea
+    Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea
+    Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea '
+  category: Work
+  tags: yellow
+- title: Another idea
+  description: lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
+    ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
+    ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
+    ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+  category: Work
+  tags: pink

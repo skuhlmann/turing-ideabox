@@ -34,6 +34,7 @@
 				<textarea name='idea[description]'class="form-control" placeholder="Enter Description" ></textarea></br>
 				<select name='idea[category]' class="form-control">
 					<option disabled selected>Select a category</option>
+					<option value = "default" selected="selected">Category</option>
 					<% categories.each do |category| %>
 						<option value="<%= category %>"><%= category %></option>
 					<% end %>

@@ -2,23 +2,6 @@
 <div class="row">	
 	<div class="span6">
 		<h2><%= tag_name.upcase %> Ideas</h2>
-		<p> Ranked by how good they are:</p>
-			<ul class="list-inline">
-				<li>
-				<% ideas.each do |idea| %>
-					<h3>Ranked <%= idea.id.next %>: <%= idea.title %></h3>
-					<h6><%= idea.description %></h6>
-					<h5><a href="/<%= idea.id %>/detail">View Idea Detail</a></h5>
-					<h5><a href="/<%= idea.id %>/edit">Edit Idea</a></h5>
-						<p><form action='/<%= idea.id %>/like' method='POST' style="display: inline">
-		 					<input type='submit' value="Good Idea +1" class="btn btn-default"/>
-						</form></p>
-						<form action="/<%= idea.id %>" method="POST">
-      				<input type="hidden" name="_method" value="DELETE">
-      				<input type="submit" value="Delete Idea +1" class="btn btn-default"/>
-	    			</form>	
-				<% end %>
-			</li>
-		</ul>
+			<%= erb :_idea_list, locals: {tag_name: tag_name, ideas: IdeaStore.tag_ideas(tag_name)} %>
 	</div>
 </div>

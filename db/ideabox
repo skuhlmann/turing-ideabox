@@ -7,7 +7,7 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl.
-  rank: 0
+  rank: 1
   tags: yellow
   category: Work
 - title: Idea 4
@@ -17,8 +17,8 @@ ideas:
     Fusce pulvinar laoreet ipsum in scelerisque. Integer ex erat, faucibus ut sagittis
     sit amet, vehicula blandit lacus. In eu tincidunt massa, in laoreet odio. Integer
     quis sapien nisl
-  category: Default
   tags: green orange
+  category: Work
 - title: New idea 2
   description: newsLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
     dignissim facilisis leo at euismod. Vestibulum et tellus in dolor facilisis tincidunt
@@ -57,7 +57,7 @@ ideas:
   description: 'Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea
     Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea
     Idea Idea Idea Idea Idea Idea Idea Idea Idea Idea '
-  category: Work
+  category: Default
   tags: yellow
 - title: Another idea
   description: lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem

@@ -3,13 +3,14 @@ require 'bundler'
 Bundler.require
 require 'app'
 require 'minitest/autorun'
+require 'minitest/pride'
 
 
 class IdeaBoxAppTest < Minitest::Test 
 	include Rack::Test::Methods
-	
-	def method_name
-	
+
+	def test_false
+		assert false
 	end
 
 	# include Rack::Test::Methods
